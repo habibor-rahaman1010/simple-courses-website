@@ -20,7 +20,7 @@ const Carusal = () => {
                 <Highlight color="#2d66c3">I am a programmer ❤️</Highlight>
                 <Highlight color="#f44336">I am a Self-Taught Learner 😉</Highlight>
                 <Highlight color="#2d66c3">I am a honest person ❤️</Highlight>
-                <Highlight color="#f44336">I expert to JavaScript Or Python 😘 </Highlight>
+                <Highlight color="#f44336">I expert to JavaScript, TypeScript and Python 😘 </Highlight>
                 <Highlight color="#2d66c3">I am a Full Stack Developer 🙂</Highlight>
                 <Highlight color="green">I love to learn and teach ❤️</Highlight>
                 <Highlight color="blue">I try to learn something new every day 😍</Highlight>
