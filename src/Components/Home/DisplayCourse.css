@@ -1,0 +1,26 @@
+.tutor{
+    font-weight: 500;
+}
+.price{
+    font-weight: 500;
+    color: rgb(54, 54, 54);
+}
+.rating{
+    color: rgb(243, 158, 0);
+    font-weight: 500;
+}
+.bestSeller{
+    margin-top: 10px;
+    background-color: #ffab3d;
+    width: 110px;
+    color: rgb(59, 59, 59);
+    text-align: center;
+    padding: 2px;
+    border-radius: 3px;
+}
+.btn-grop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}

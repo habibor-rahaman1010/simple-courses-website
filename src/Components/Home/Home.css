@@ -1,0 +1,32 @@
+.HomeSection{
+    max-width: 1400px;
+    margin: auto;
+    margin-top: 100px;
+}
+.Header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_right{
+    padding: 10px;
+    
+}
+.header_right h1{
+    color: rgb(0, 146, 127);
+    font-weight: 500;
+    margin-bottom: 30px;
+    line-height: 55px;
+}
+.header_right p{
+    line-height: 30px;
+    font-size: 18px;
+    color: rgb(75, 75, 75);
+}
+.header_right button{
+    margin-top: 10px;
+}
+.Header img{
+    max-width: 580px;
+    padding: 20px;
+}
