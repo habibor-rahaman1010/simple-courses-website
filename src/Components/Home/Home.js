@@ -1,12 +1,11 @@
-import React, { useContext } from 'react';
 import './Home.css'
-import { AuthContext } from '../../ContextAPI/ContextAPI';
 import DisplayCourses from './DisplayCourses';
 import Carusal from '../Carusal/Carusal';
+import UseAuthProvider from '../../Hooks/UserAuthProvider';
 
 
 const Home = () => {
-    const courses = useContext(AuthContext)
+    const { courses } = UseAuthProvider()
 
     const items = []
     for (let i = 0; i < courses.length; i++) {

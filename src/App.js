@@ -11,6 +11,8 @@ import Contact from './Components/Contact/Contact';
 import About from './Components/About/About';
 import Details from './Components/Courses/Details/Details';
 import NotFound from './Components/NotFound/NotFound';
+import Footer from './Components/Footer/Footer';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 
 function App() {
 
@@ -29,17 +31,17 @@ function App() {
               <Home></Home>
             </Route>
 
-            <Route exact path="/our/courses">
+            <PrivateRoute exact path="/our/courses">
               <Courses></Courses>
-            </Route>
+            </PrivateRoute>
 
-            <Route exact path="/our/courses/details/:id">
+            <PrivateRoute exact path="/our/courses/details/:id">
               <Details></Details>
-            </Route>
+            </PrivateRoute>
 
-            <Route exact path="/our/courses/best_seller">
+            <PrivateRoute exact path="/our/courses/best_seller">
               <BestSeller></BestSeller>
-            </Route>
+            </PrivateRoute>
 
             <Route exact path="/our/contact_us">
               <Contact></Contact>
@@ -62,6 +64,7 @@ function App() {
             </Route>
 
           </Switch>
+          <Footer></Footer>
         </BrowserRouter>
       </div>
     </ContextAPI>

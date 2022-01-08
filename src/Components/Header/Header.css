@@ -31,3 +31,11 @@
     font-size: 33px;
     font-weight: 600;
 }
+.profile img{
+    width: 50px;
+    border-radius: 50px;
+}
+.nav_left{
+    display:  flex;
+    align-items: center;
+}

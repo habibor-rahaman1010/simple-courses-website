@@ -1,9 +1,8 @@
-import React, { useContext } from 'react';
-import { AuthContext } from '../../ContextAPI/ContextAPI';
 import DisplayBestSeller from './DisplayBestSeller';
+import UseAuthProvider from '../../Hooks/UserAuthProvider';
 
 const BestSeller = () => {
-    const courses = useContext(AuthContext);
+    const { courses } = UseAuthProvider()
 
     const filterCourses = [];
     for (let i = 0; i < courses.length; i++) {

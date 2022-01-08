@@ -1,9 +1,9 @@
-import React, { useContext, useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
-import { AuthContext } from '../../../ContextAPI/ContextAPI';
+import UseAuthProvider from '../../../Hooks/UserAuthProvider';
 
 const Details = () => {
-    const courses = useContext(AuthContext);
+    const { courses } = UseAuthProvider()
 
     const history = useHistory();
 

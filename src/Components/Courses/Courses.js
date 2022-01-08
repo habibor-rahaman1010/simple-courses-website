@@ -1,9 +1,8 @@
-import React, { useContext } from 'react';
-import { AuthContext } from '../../ContextAPI/ContextAPI';
+import UseAuthProvider from '../../Hooks/UserAuthProvider';
 import Course from './Course';
 
 const Courses = () => {
-    const courses = useContext(AuthContext);
+    const { courses } = UseAuthProvider()
 
     return (
         <div className='HomeSection'>
