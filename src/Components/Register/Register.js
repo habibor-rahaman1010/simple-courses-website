@@ -12,12 +12,10 @@ const Register = () => {
     const [email, setEmail] = useState('')
     const [name, setName] = useState('');
     const [password, setPassword] = useState('');
-    const [repassword, setRepassword] = useState('');
-
 
     const location = useLocation();
     const history = useHistory();
-    const redirect_uri = location.state?.from || '/';
+    const redirect_uri = location?.state?.from || '/';
 
     // this is googlr handle click..
     const handleClickGoogle = () => {
@@ -65,12 +63,6 @@ const Register = () => {
         setPassword(password);
     }
 
-    // get user Re-Password
-    const handleGetNameRePassword = (e) => {
-        const repassword = e.target.value;
-        setRepassword(repassword);
-    }
-
     // this function cretae an user....
     const handleCreateCoustomUser = (email, password) => {
         createCoustomUser(email, password)
@@ -82,6 +74,7 @@ const Register = () => {
             })
 
     }
+    console.log(email, name, password)
 
 
     const auth = getAuth();
@@ -121,7 +114,7 @@ const Register = () => {
                     <div className="mb-3 row">
                         <label htmlFor="inputPassword" className="col-sm-2 col-form-label">Password</label>
                         <div className="col-sm-10">
-                            <input onBlur={handleGetNameRePassword} type="password" className="form-control" id="inputRePassword" placeholder='Re Enter Your Password' required />
+                            <input onBlur={handleGetPassword} type="password" className="form-control" id="inputRePassword" placeholder='Re Enter Your Password' required />
                         </div>
                     </div>
 

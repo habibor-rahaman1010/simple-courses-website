@@ -11,7 +11,7 @@ const Login = () => {
 
     const location = useLocation();
     const history = useHistory();
-    const redirect_uri = location.state?.from || '/';
+    const redirect_uri = location?.state?.from || '/';
 
     const handleClickGoogle = () => {
         googleSignIn()

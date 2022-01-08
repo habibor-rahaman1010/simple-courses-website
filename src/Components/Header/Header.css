@@ -39,3 +39,20 @@
     display:  flex;
     align-items: center;
 }
+.myBtn{
+    background-color: rgb(39, 42, 43);
+    border: none;
+    cursor: pointer;
+}
+.myBtn:focus{
+    outline: none;
+}
+.my-modal{
+    position: absolute;
+    left: 0;
+    margin: 10% 100%;
+    width: 350px;
+}
+.img{
+    border-radius: 5px;
+}
